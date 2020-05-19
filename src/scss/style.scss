@@ -36,3 +36,47 @@ body {
     max-height: 450px;
   }
 }
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid;
+}
+
+#authors {
+  .image {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+
+    img {
+      position: absolute;
+      object-fit: cover;
+      max-width: 100%;
+      max-height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  .fa {
+    font-size: 25px;
+  }
+
+  .card:hover {
+    background-color: $primary;
+    color: #fff;
+    transition: color 0.2s ease;
+
+    .fa {
+      color: #fff;
+      transition: color 0.2s ease;
+    }
+
+    .text-muted {
+      color: #fff !important;
+      transition: color 0.2s ease;
+    }
+  }
+}
